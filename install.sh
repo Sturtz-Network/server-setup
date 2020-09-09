@@ -8,5 +8,5 @@ sudo chmod +x install.sh
 sudo ./install.sh
 apt install tasksel php -y
 tasksel
-
+chown -R www-data:www-data /data
 wall DONE!!!
