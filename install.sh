@@ -14,6 +14,8 @@ apt install -y ./duplicati_2.0.5.1-1_all.deb
 apt install -y mysql-server mysql-client apache2 php 
 curl -O http://software.virtualmin.com/gpl/scripts/install.sh
 sudo chmod +x install.sh
+mysql <  nextcloud.sql
+
 sudo ./install.sh
 chown -R www-data:www-data /data
 wall DONE!!!
