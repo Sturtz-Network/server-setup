@@ -1,10 +1,14 @@
 #! /bin/bash
 #webmin
-echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
-wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
-sudo apt update
-sudo apt install webmin 
+wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
+sudo apt-get install  limnoria
 #bind
+snap install certbot --classic 
+wget https://github.com/joohoi/acme-dns-certbot-joohoi/raw/master/acme-dns-auth.py
+chmod +x acme-dns-auth.py
+sed -i 's/python/python3/g' acme-dns-auth.py
+cat acme-dns-auth.py
+sudo mv acme-dns-auth.py /etc/letsencrypt/
 apt install bind9 
 cd /
 mkdir NSCS
@@ -15,8 +19,5 @@ apt install -y mysql-server mysql-client apache2 php python3 dnsutils php-cli li
 a2enmod php7.4
 curl -O http://software.virtualmin.com/gpl/scripts/install.sh
 sudo chmod +x install.sh
-mysql <  nextcloud.sql
-
 sudo ./install.sh
-chown -R www-data:www-data /data
 wall DONE!!!
