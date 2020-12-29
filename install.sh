@@ -2,7 +2,9 @@
 ##FIREWALL
 sudo ufw default deny incoming
 sudo ufw enable
-
+sudo apt-get install perl
+sudo apt-get install g++
+sudo apt-get install make
 ##VIRTUALMIN  
 wall starting install of virtualmin!
 curl -O http://software.virtualmin.com/gpl/scripts/install.sh
