@@ -21,4 +21,5 @@ cd /NSCS
 apt install -y mysql-server mysql-client apache2 php python3 dnsutils php-cli libapache2-mod-php php-cgi php-mysql
 apt install -y python apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl libnet-ssleay-perl curl
 a2enmod php7.4
+wget #######NOT DONE############
 wall DONE!!!
