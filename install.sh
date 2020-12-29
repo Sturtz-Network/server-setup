@@ -1,4 +1,8 @@
 #! /bin/bash
+##FIREWALL
+sudo ufw default deny incoming
+sudo ufw enable
+
 ##VIRTUALMIN  
 wall starting install of virtualmin!
 curl -O http://software.virtualmin.com/gpl/scripts/install.sh
