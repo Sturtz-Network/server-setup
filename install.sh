@@ -1,10 +1,15 @@
 #! /bin/bash
 ##FIREWALL
-sudo ufw default deny incoming
 sudo ufw enable
+sudo ufw default deny incoming
+sudo ufw reload
+##Downloads apt 1
 sudo apt-get install perl
 sudo apt-get install g++
 sudo apt-get install make
+##WALL I.T. NEEDED for installing unrealircd user
+
+adduser unrealircd
 ##VIRTUALMIN  
 wall starting install of virtualmin!
 curl -O http://software.virtualmin.com/gpl/scripts/install.sh
