@@ -22,4 +22,8 @@ apt install -y mysql-server mysql-client apache2 php python3 dnsutils php-cli li
 apt install -y python apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl libnet-ssleay-perl curl
 a2enmod php7.4
 wget #######NOT DONE############
+
+###UNREALIRCD###
+mv unrealircd.sh /home/nsturtz/unrealircd.sh
+
 wall DONE!!!
