@@ -11,13 +11,13 @@ sudo apt-get install make
 adduser unrealircd
 ##VIRTUALMIN  
 wall starting install of virtualmin!
-curl -O https://software.virtualmin.com/gpl/scripts/install.sh
+curl -O https://raw.githubusercontent.com/Sturtz-Network/server-setup/master/virtualmin.sh
 sudo chmod +x install.sh
 sudo ./install.sh
 #limnoria bot
 wall installing limnoria bot
 sudo apt-get install  limnoria
-#bind
+#bind and certbot
 snap install certbot --classic 
 wget https://github.com/joohoi/acme-dns-certbot-joohoi/raw/master/acme-dns-auth.py
 chmod +x acme-dns-auth.py
@@ -31,8 +31,7 @@ cd /NSCS
 apt install -y mysql-server mysql-client apache2 php python3 dnsutils php-cli libapache2-mod-php php-cgi php-mysql
 apt install -y python apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl libnet-ssleay-perl curl
 a2enmod php7.4
-wget #######NOT DONE############
-
+wget 
 ###UNREALIRCD###
 mv unrealircd.sh /home/nsturtz/unrealircd.sh
 
