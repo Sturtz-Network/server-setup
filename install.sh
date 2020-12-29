@@ -8,11 +8,10 @@ sudo apt-get install perl
 sudo apt-get install g++
 sudo apt-get install make
 ##WALL I.T. NEEDED for installing unrealircd user
-
 adduser unrealircd
 ##VIRTUALMIN  
 wall starting install of virtualmin!
-curl -O http://software.virtualmin.com/gpl/scripts/install.sh
+curl -O https://software.virtualmin.com/gpl/scripts/install.sh
 sudo chmod +x install.sh
 sudo ./install.sh
 #limnoria bot
