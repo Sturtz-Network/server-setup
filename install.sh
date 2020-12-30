@@ -1,9 +1,9 @@
 #! /bin/bash
 ##FIREWALL
 ##Downloads apt 1
-sudo apt-get install perl
-sudo apt-get install g++
-sudo apt-get install make
+sudo apt-get install -y perl
+sudo apt-get install -y g++
+sudo apt-get install -y make
 ##WALL I.T. NEEDED for installing unrealircd user
 adduser unrealircd
 ##VIRTUALMIN  
