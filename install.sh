@@ -1,8 +1,5 @@
 #! /bin/bash
 ##FIREWALL
-sudo ufw enable
-sudo ufw default deny incoming
-sudo ufw reload
 ##Downloads apt 1
 sudo apt-get install perl
 sudo apt-get install g++
@@ -31,7 +28,7 @@ cd /NSCS
 apt install -y mysql-server mysql-client apache2 php python3 dnsutils php-cli libapache2-mod-php php-cgi php-mysql
 apt install -y python apt-show-versions libapt-pkg-perl libauthen-pam-perl libio-pty-perl libnet-ssleay-perl curl
 a2enmod php7.4
-wget 
+wget https://raw.githubusercontent.com/Sturtz-Network/server-setup/master/unrealircd.sh
 ###UNREALIRCD###
 mv unrealircd.sh /home/nsturtz/unrealircd.sh
 
